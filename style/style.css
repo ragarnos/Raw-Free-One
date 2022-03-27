@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.container {
+    max-width: 1357px;
+    margin: 0 auto;
+    padding: 0 15px;
+ }
+ 
+.fresh__wrap{
+    background-image: url(./assets/img/herbas.png);
+}
+.OURSTORY{
+    display: flex;
+    justify-content: center;
+}
+.OURSTORY__gallary-images{
+    width: 100%;
+    max-width: 800px;
+}
+.OURSTORY__content-main{
+    text-align: center;
+    max-width: 420px;
+    padding: 20px;
+}
+.OURSTORY__content{
+    background: url(../images/2.jpg);
+    display: flex;
+    align-items: center;
+}
+.OURSTORY__content-border{
+    width: 36px;
+    height: 8px;
+    background-color: #d91f1f;
+    margin: 0 auto;
+}
