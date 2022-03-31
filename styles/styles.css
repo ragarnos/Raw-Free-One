@@ -20,7 +20,7 @@ body {
   line-height: 1.17;
   font-weight: 700;
   /* font-family: 'Montserrat', sans-serif; */
-  background: url(../image/background.png) no-repeat top;
+  background: url(../image/background_layer.png);
 }
 
 .container {
@@ -76,11 +76,11 @@ body {
 }
 
 .header__container {
-  max-width: 1387px;
+  max-width: 1348px;
   margin: 0 auto;
   background-image: url(../image/Layer\ 1.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
 }
 
 .header__container-block {
