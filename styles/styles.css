@@ -240,7 +240,11 @@ body {
 
 a {
   text-decoration: none;
-}  
+} 
+
+.footer {
+  padding-bottom: 25px;
+}
 
 .footer__line {
   max-width: 1356px;
