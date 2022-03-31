@@ -4,59 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>Layout</title>
+    <title>Raw</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__container">
-            <div class="header__inner">
-             <img class="header__logo" src="./image/RAW LOGO.png" alt="header LOGO">
-                <nav class="nav">
-                    <a class="nav__link" href="#">story</a>
-                    <a class="nav__link" href="#">fresh</a>
-                    <a class="nav__link" href="#">local</a>
-                    <a class="nav__link" href="#">contact</a>          
-                </nav>
-            </div>
-            <div class="header__container-block">
-                <img  class="header__container-img" src="./image/Ellipse 1.png" alt="front picture">  
-                <img class="header__container-arrow" src="./image/ARROW.png" alt="arrow">
-            </div>
-       </div> 
-    </header>
-    <div class="OURSTORY container">
-        <div class="OURSTORY__content">
+   <header class="header">
+       <div class="header__container">
+           <div class="header__inner">
+            <img class="header__logo" src="./image/RAW LOGO.png" alt="header LOGO">
+               <nav class="nav">
+                   <a class="nav__link" href="#">story</a>
+                   <a class="nav__link" href="#">fresh</a>
+                   <a class="nav__link" href="#">local</a>
+                   <a class="nav__link" href="#">contact</a>          
+               </nav>
+           </div>
+           <div class="header__container-block">
+               <img  class="header__container-img" src="./image/Ellipse 1.png" alt="front picture">  
+               <img class="header__container-arrow" src="./image/ARROW.png" alt="arrow">
+           </div>
+      </div> 
+   </header>
+   <main>
+      <div class="OURSTORY container">
+         <div class="OURSTORY__content">
             <div class="OURSTORY__content-main">
-                <h2 class="OURSTORY__content-title">OUR STORY</h2>
-                <div class="OURSTORY__content-border"></div>
-                <p class="OURSTORY__content-desk">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores hic ut fugiat, doloribus facere nam omnis consectetur cum itaque ad voluptatem et impedit voluptate eum! Aspernatur beatae error ipsam expedita.</p>
+                  <h2 class="OURSTORY__content-title">OUR STORY</h2>
+                  <div class="OURSTORY__content-border"></div>
+                  <p class="OURSTORY__content-desk">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores hic ut fugiat, doloribus facere nam omnis consectetur cum itaque ad voluptatem et impedit voluptate eum! Aspernatur beatae error ipsam expedita.</p>
             </div>
-        </div>
-        <div class="OURSTORY__gallary">
+         </div>
+         <div class="OURSTORY__gallary">
             <img class="OURSTORY__gallary-images" src="./image/IMAGE1.jpg" alt="IMAGE1">
             <div class="OURSTORY__gallary-blur"></div>
-        </div>
-    </div>
-    <div class="container fresh">
-        <div class="OURSTORY__gallary">
+         </div>
+      </div>
+      <div class="container fresh">
+         <div class="OURSTORY__gallary">
             <img class="fresh__gallary-images" src="./image/fresh.jpg" alt="IMAGE1">
             <div class="OURSTORY__gallary-blur"></div>
-        </div>
-        <div class="OURSTORY__content">
+         </div>
+         <div class="OURSTORY__content">
             <div class="fresh__content-main">
-                <img src="./image/Rosa.png" alt="Rosa">
-                <h2 class="OURSTORY__content-title">OUR STORY</h2>
-                <div class="OURSTORY__content-border"></div>
-                <p class="OURSTORY__content-desk">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores hic ut fugiat, doloribus facere nam omnis consectetur cum itaque ad voluptatem et impedit voluptate eum! Aspernatur beatae error ipsam expedita.</p>
+                  <img src="./image/Rosa.png" alt="Rosa">
+                  <h2 class="OURSTORY__content-title">OUR STORY</h2>
+                  <div class="OURSTORY__content-border"></div>
+                  <p class="OURSTORY__content-desk">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores hic ut fugiat, doloribus facere nam omnis consectetur cum itaque ad voluptatem et impedit voluptate eum! Aspernatur beatae error ipsam expedita.</p>
             </div>
-        </div>
-    </div>
-
-
-    
+         </div>
+      </div>
+      <section class="distillation">
+         <div class="container distillation__line">
+         <div class="distillation__content">
+            <div class="distillation__content-main">
+               <img class="distillation__content-main-img" src="./image/distillation_flower.png" alt="flower">
+               <h2 class="subtitle distillation__content-main-title">local distilation</h2>
+               <hr class="title-decor distillation__content-main-decor">
+               <div class="text distillation__content-main-text">
+                  Lorem ipsum dolor sit amet, consectetuer leo semper wisi lacinia, in distinctio, pede suspendisse aliquet nibh tempor arcu in, fermentum praesent iaculis mauris adipiscing mauris. Non dapibus in fusce purus dolor sit, proin aenean, sollicitudin quis ultricies tincidunt duis, varius feugiat dictum id congue suspendisse lectus.
+               </div>
+            </div>
+         </div>
+         <div class="distillation__gallery">
+            <img class="distillation__gallery-img" src="./image/distillation-gallery.jpg" alt="distillation flower">
+            <div class="distillation__gallary-blur"></div>
+         </div>
+         </div>
+         <div class="container">
+         <div class="distillation__fish">
+            <img class="distillation__fish-img" src="./image/fish.jpg" alt="fish">
+            <div class="distillation__fish-blur"></div>
+         </div>
+      </div>
+      </section>
+   </main>
 </body>
-</html>

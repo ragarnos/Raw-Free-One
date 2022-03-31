@@ -1,122 +1,239 @@
+@font-face {
+  font-family: "Neutraface 2 Display Bold";
+  src: url("../fonts/Neutraface2Display-Bold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Neutraface 2 Display Greek Titl";
+  src: url("../fonts/Neutraface2DispGreek-Titl.otf");
+  font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-image: url(../image/background.png);
-    background-repeat: no-repeat;
-    background-position: top;
-  }
+  font-family: "Neutraface 2 Display Bold";
+  font-size: 18px;
+  line-height: 1.17;
+  font-weight: 700;
+  /* font-family: 'Montserrat', sans-serif; */
+  background: url(../image/background.png) no-repeat top;
+}
 
-  .header {
-    width: 100%;
-  }
+.container {
+  max-width: 1387px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
- 
+.subtitle {
+  font-family: "Neutraface 2 Display Greek Titl";
+  font-size: 38px;
+}
 
+.title-decor {
+  display: inline-block;
+  border: none;
+  width: 36px;
+  height: 8px;
+  background-color: rgba(217, 31, 31, 0.46);
+}
 
-  .header__inner {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: baseline;
-    
+/* ---HEADER--- */
 
-  }
+.header {
+  width: 100%;
+}
 
- .header__logo {
-      margin-top: 20px;
-  }
-
-  .header__inner .nav {
-  
-    margin-left: 45%;
-    font-size: 16px;
-    font-weight: 500;
-  }
-
-  .header__inner .nav__link {
-    font-weight: 700;
-    text-decoration: none;
-    line-height: 20px;
-    color: black;
-    padding: 20px;
-    text-transform: uppercase;
-  }
-  .container{
-    max-width: 1350px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-  .header__container {
-    
-    max-width: 1350px;
-    margin: 0 auto;
-    background-image: url(../image/Layer\ 1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-.header__container-block{
+.header__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  
+  align-items: baseline;
+}
+
+.header__logo {
+  margin-top: 20px;
+}
+
+.header__inner .nav {
+  margin-left: 45%;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header__inner .nav__link {
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 20px;
+  color: black;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.header__container {
+  max-width: 1387px;
+  margin: 0 auto;
+  background-image: url(../image/Layer\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__container-block {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .header__container-img {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
-.OURSTORY{
-    display: flex;
-    justify-content: center;
+/* ---SECTION OURSTORY--- */
+
+.OURSTORY {
+  display: flex;
+  justify-content: center;
 }
-.OURSTORY__gallary{
+
+.OURSTORY__gallary {
   position: relative;
 }
-.OURSTORY__gallary-blur{
-  background-color: rgb( 255, 255, 255 );
-  opacity: 0.302;
+
+.OURSTORY__gallary-blur,
+.distillation__gallary-blur {
+  background-color: rgba(255, 255, 255, 0.302);
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
+
 .OURSTORY__content-title{
   font-size: 28px;
   font-weight: 800;
 }
+
 .OURSTORY__gallary-images{
   width: 100%;
   max-width: 800px;
 }
+
 .OURSTORY__content-main{
     text-align: center;
-    max-width: 420px;
+    max-width: 550px;
     padding: 0px 70px;
 }
+
 .OURSTORY__content{
     background: url(../image/2.jpg);
     display: flex;
     align-items: center;
 }
+
 .OURSTORY__content-border{
     width: 36px;
     height: 8px;
     background-color: #d91f1f;
     margin: 0 auto;
 }
-.fresh{
+
+/* ---SECTION FRESH--- */
+
+.fresh {
   display: flex;
   justify-content: space-between;
 }
-.fresh__gallary-images{
+
+.fresh__gallary-images {
   width: 100%;
   max-width: 950px;
 }
 
-.fresh__content-main{
+.fresh__content-main {
   text-align: center;
   max-width: 420px;
   padding: 0px 30px;
+}
+
+/* ---SECTION DISTILLATION--- */
+
+.distillation__line {
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .distillation__line {
+    flex-wrap: wrap;
+  }
+}
+
+.distillation__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 540px;
+  background: #fff url(../image/distillation_back.png) no-repeat top/cover;
+}
+
+.distillation__content-main {
+  flex-basis: 400px;
+  text-align: center;
+  padding: 20px;
+}
+
+.distillation__content-main-img {
+  margin-bottom: 60px;
+}
+
+.distillation__content-main-title {
+  margin-bottom: 35px;
+}
+
+.distillation__content-main-decor {
+  margin-bottom: 20px;
+}
+
+.distillation__gallery {
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  .distillation__gallery {
+    width: 100%;
+  }
+}
+
+.distillation__gallery-img {
+  max-width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1000px) {
+  .distillation__gallery-img {
+    width: 100%;
+  }
+}
+
+.distillation__fish {
+  position: relative;
+  font-size: 0%;
+}
+
+.distillation__fish-img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.distillation__fish-blur {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.15;
 }
