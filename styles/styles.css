@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Neutraface 2 Display Bold";
+  src: url("../fonts/Neutraface2Display-Bold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Neutraface 2 Display Greek Titl";
+  src: url("../fonts/Neutraface2DispGreek-Titl.otf");
+  font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Neutraface 2 Display Bold";
+  font-size: 18px;
+  line-height: 1.17;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1387px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.subtitle {
+  font-family: "Neutraface 2 Display Greek Titl";
+  font-size: 38px;
+}
+
+.title-decor {
+  display: inline-block;
+  border: none;
+  width: 36px;
+  height: 8px;
+  background-color: rgba(217, 31, 31, 0.46);
+}
+
+.OURSTORY__gallary-blur,
+.distillation__gallary-blur {
+  background-color: rgba(255, 255, 255, 0.302);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.distillation {
+  background: url(../image/background_layer.png) no-repeat center/cover;
+}
+
+.distillation__line {
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .distillation__line {
+    flex-wrap: wrap;
+  }
+}
+
+.distillation__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 540px;
+  background: #fff url(../image/distillation_back.png) no-repeat top/cover;
+}
+
+.distillation__content-main {
+  flex-basis: 400px;
+  text-align: center;
+  padding: 20px;
+}
+
+.distillation__content-main-img {
+  margin-bottom: 60px;
+}
+
+.distillation__content-main-title {
+  margin-bottom: 35px;
+}
+
+.distillation__content-main-decor {
+  margin-bottom: 20px;
+}
+
+.distillation__gallery {
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  .distillation__gallery {
+    width: 100%;
+  }
+}
+
+.distillation__gallery-img {
+  max-width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1000px) {
+  .distillation__gallery-img {
+    width: 100%;
+  }
+}
+
+.distillation__fish {
+  position: relative;
+  font-size: 0%;
+}
+
+.distillation__fish-img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.distillation__fish-blur {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.15;
+}
