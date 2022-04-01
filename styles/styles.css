@@ -9,7 +9,9 @@
   src: url("../fonts/Neutraface2DispGreek-Titl.otf");
   font-weight: 700;
 }
-
+img{
+  vertical-align: middle;
+}
 * {
   box-sizing: border-box;
 }
