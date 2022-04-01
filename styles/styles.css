@@ -22,7 +22,11 @@ body {
   line-height: 1.17;
   font-weight: 700;
   /* font-family: 'Montserrat', sans-serif; */
-  background: url(../image/background_layer.png);
+  background: url(../image/background_layer.png) no-repeat top/cover;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -81,7 +85,7 @@ body {
 .header__container {
   max-width: 1348px;
   margin: 0 auto;
-  background-image: url(../image/Layer\ 1.png);
+  background-image: url(../image/Layer_1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -94,6 +98,11 @@ body {
 
 .header__container-img {
   margin-top: 100px;
+}
+
+.header__container-link {
+  display: inline-block;
+  padding: 22px;
 }
 
 /* ---SECTION OURSTORY--- */
@@ -244,9 +253,7 @@ body {
   opacity: 0.15;
 }
 
-a {
-  text-decoration: none;
-} 
+/* ---SECTION FOOTER--- */
 
 .footer {
   padding-bottom: 25px;
