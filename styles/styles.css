@@ -161,12 +161,23 @@ a {
   display: flex;
   flex-direction: row-reverse;
 }
+.fresh__content-img{
+  margin-bottom: 60px;
+}
+.fresh__decor{
+  margin-bottom: 20px;
+}
 .fresh__content{
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1 1 540px;
   background: #fff url(../image/fresh_back.png) no-repeat top/cover;
+}
+.fresh__content-main {
+  flex-basis: 400px;
+  text-align: center;
+  padding: 20px;
 }
 .fresh__gallery {
   position: relative;
