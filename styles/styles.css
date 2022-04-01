@@ -157,23 +157,25 @@ a {
 }
 
 /* ---SECTION FRESH--- */
-/* 
-.fresh {
+.fresh__line{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: row-reverse;
 }
-
-.fresh__gallary-images {
-  width: 100%;
-  max-width: 950px;
+.fresh__content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 540px;
+  background: #fff url(../image/fresh_back.png) no-repeat top/cover;
 }
-
-.fresh__content-main {
-  text-align: center;
-  max-width: 420px;
-  padding: 15px 30px;
-} */
+.fresh__gallery {
+  position: relative;
+}
+.fresh__img {
+  max-width: 100%;
+  height: 100%;
+  opacity: .7;
+}
 
 /* ---SECTION DISTILLATION--- */
 
